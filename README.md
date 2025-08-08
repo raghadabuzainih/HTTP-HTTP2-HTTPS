@@ -6,8 +6,11 @@
 - Connections are not secure (without encryption)
 
 const http = require('http');
+
 const server = http.createServer((req, res) => {
+
 res.end('we are using HTTP');
+
 });
 
 server.listen(3000);
@@ -20,8 +23,11 @@ server.listen(3000);
 - Provides advanced features to improve performance
 
 const http2 = require('http2');
+
 const server = http2.createServer((req, res) => {
+
   res.end('we are using HTTP2');
+
 });
 
 server.listen(3000);
@@ -38,12 +44,16 @@ const https = require('https');
 const fs = require('fs');
 
 const options = {
+
   key: fs.readFileSync('private-key.pem'),
+  
   cert: fs.readFileSync('certificate.pem')
 };
 
 const server = https.createServer(options, (req, res) => {
+
   res.end('we are using HTTPS')
+
 });
 
 server.listen(3000);
