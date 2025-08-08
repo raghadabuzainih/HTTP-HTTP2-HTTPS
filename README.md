@@ -67,23 +67,23 @@ HTTP/2 is faster and more efficient than HTTP/1.1 because:
 ------------------------------------------
 - Use the http module when:
 
-1- Developing simple applications or for experimentation
-2- Working in a local development environment
-3- Creating internal APIs that don't require coding
-4- Compatibility with legacy systems that only support HTTP/1.1
+1. Developing simple applications or for experimentation
+2. Working in a local development environment
+3. Creating internal APIs that don't require coding
+4. Compatibility with legacy systems that only support HTTP/1.1
 
 - Use the HTTP2 module when:
-1- High performance is needed with heavy traffic
-2- Modern applications that require HTTP/2 features
-3- Improved user experience (faster loading)
-4- Works with modern browsers that support HTTP/2
+1. High performance is needed with heavy traffic
+2. Modern applications that require HTTP/2 features
+3. Improved user experience (faster loading)
+4. Works with modern browsers that support HTTP/2
 
 - Use the https module when:
 
-1- Deploying the application to a production environment
-2- Handling sensitive data (passwords, personal information)
-3- Needing better SEO (search engines prefer HTTPS)
-4- Security compliance requirements
+1. Deploying the application to a production environment
+2. Handling sensitive data (passwords, personal information)
+3. Needing better SEO (search engines prefer HTTPS)
+4. Security compliance requirements
 
 
 
