@@ -5,12 +5,13 @@
 - You can use it if you want to build an API or an unencrypted website (without HTTPS)
 - Connections are not secure (without encryption)
 
-const http = require('http')
+const http = require('http');
 const server = http.createServer((req, res) => {
-res.end('we are using HTTP')
+res.end('we are using HTTP');
 });
 
-server.listen(3000)
+server.listen(3000);
+
 -----------------------------------------
 - HTTP2 module:
 - We use it for creating HTTP/2 servers and clients (encrypted and unencrypted)
@@ -18,12 +19,13 @@ server.listen(3000)
 - Can be used with or without SSL/TLS encryption
 - Provides advanced features to improve performance
 
-const http2 = require('http2')
+const http2 = require('http2');
 const server = http2.createServer((req, res) => {
-  res.end('we are using HTTP2')
+  res.end('we are using HTTP2');
 });
 
-server.listen(3000)
+server.listen(3000);
+
 -----------------------------------------
 - HTTPS module:
 - Built on the HTTP module but with TLS/SSL encryption support
@@ -32,8 +34,8 @@ server.listen(3000)
 - Used when data between the server and the user needs to be protected
 - Essential for production applications that require security
 
-const https = require('https')
-const fs = require('fs')
+const https = require('https');
+const fs = require('fs');
 
 const options = {
   key: fs.readFileSync('private-key.pem'),
@@ -44,7 +46,8 @@ const server = https.createServer(options, (req, res) => {
   res.end('we are using HTTPS')
 });
 
-server.listen(3000)
+server.listen(3000);
+
 -----------------------------------------
 HTTP/2 is faster and more efficient than HTTP/1.1 because:
 
